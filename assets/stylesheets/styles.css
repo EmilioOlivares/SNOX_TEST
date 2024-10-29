@@ -1494,7 +1494,7 @@ section {background: var(--light-color);}
   position: relative;
   background: url(../images/hero-bg.png) center center;
   background-size: cover;
-  padding: 460px 0 0 0;
+  padding: 100px 0 0 0;
   height: 100vh;
   min-height: 700px;
   display: flex;
@@ -1619,11 +1619,19 @@ section {background: var(--light-color);}
 
 @media (max-width: 991px) {
   .hero {
-    background: url(../images/hero-bg_min01.png) center center;
+    background: url(../images/hero-bg.png) center center;
+    padding: 100px 0 0 0;
   }
   .hero h2 {
     font-size: 24px;
   }
+  .hero img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
   .call-to-action {
     background: url(../images/cta-bg.html) center left;
       background-size: cover;
@@ -1669,8 +1677,12 @@ section {background: var(--light-color);}
 
 @media (max-width: 450px) {
   .hero {
-    background: url(../images/hero-bg_min01.png) center center;
-    padding: 505px 0 0 0;
+    background: url(../images/hero-bg.png) center center;
+    padding: 70px 0 0 0;
+  }
+
+  .hero img{
+    width: 45%;
   }
 }
 
@@ -3124,7 +3136,7 @@ dl, ol, ul {
   width: 100%;
   padding: 10px 20px;
   height: 52px;
-  color: #fff;
+  color: var(--color-primary);
   border: none;
   border-radius: 8px;
   text-transform: capitalize;
@@ -3134,6 +3146,7 @@ dl, ol, ul {
 
 .contact-section .contact-form-3 form input:focus,
 .contact-section .contact-form-3 form textarea:focus {
+  color: var(--text-grey-color);
   outline: none;
   border: none;
   -webkit-box-shadow: none;
