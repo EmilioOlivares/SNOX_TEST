@@ -3139,7 +3139,6 @@ dl, ol, ul {
   color: var(--color-primary);
   border: none;
   border-radius: 8px;
-  text-transform: capitalize;
   transition: all 0.4s;
   background: var(--theme-color-dark);
 }
